@@ -44,3 +44,30 @@ nav{
         padding: .8rem 1.4rem;
     }
 }
+
+section{
+    padding: 2rem;
+
+    h1{font-size: 2rem; color: beige;}
+    
+    main{
+        gap: 1rem;
+        display: grid;
+        padding-top: 1rem;
+        grid-template-columns: repeat(4,1fr);
+
+        .card{
+            gap: 1rem;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid #c3c3c3;
+            
+            h1{padding-bottom: 1rem;}        
+            
+            div{
+                h3{padding-bottom: .5rem; color: bisque;}
+            }
+        }
+    }
+}
