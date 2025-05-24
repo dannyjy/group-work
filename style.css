@@ -5,14 +5,15 @@
 }
 
 body{
-    background: #1a1a1afe;
+    height: 100vh;
 }
 
 nav{
-    color: #fff;
     display: flex;
     padding: .5rem;
     position: sticky;
+    top: 0;
+    background: #fff;
     padding-left: 1rem;
     padding-right: 1rem;
     align-items: center;
@@ -36,19 +37,21 @@ nav{
     }
 
     button{
-        color: #fff;
         border: none;
+        color: #fff;
         font: 600 2rem;
         border-radius: 10px;
-        background: rgb(110, 0, 110);
+        background: #ca832d;
         padding: .8rem 1.4rem;
     }
 }
 
 section{
     padding: 2rem;
+    height: 100%;
+    overflow: auto;
 
-    h1{font-size: 2rem; color: beige;}
+    h1{font-size: 2rem;}
     
     main{
         gap: 1rem;
@@ -58,7 +61,6 @@ section{
 
         .card{
             gap: 1rem;
-            color: #fff;
             padding: 1rem;
             border-radius: 1rem;
             border: 1px solid #c3c3c3;
@@ -66,8 +68,19 @@ section{
             h1{padding-bottom: 1rem;}        
             
             div{
-                h3{padding-bottom: .5rem; color: bisque;}
+                h3{padding-bottom: .5rem; color: #ca832d;}
             }
         }
     }
+}
+
+footer{
+    display: flex; 
+    padding: 20px; 
+    bottom: 0;
+    position: sticky;
+    text-align: bottom;
+    align-items: center;
+    background-color: #f1f1f1; 
+    justify-content: space-between; 
 }
